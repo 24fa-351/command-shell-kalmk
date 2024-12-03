@@ -1,0 +1,1 @@
+gcc -Wall main.c shell.c -o run
