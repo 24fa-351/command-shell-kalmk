@@ -73,13 +73,13 @@ int main()
             tokens[0] = NULL;
         }
 
-        for (int i = 0; tokens[i] != NULL; i++)
+        for (int ix = 0; tokens[ix] != NULL; ix++)
         {
-            if (strcmp(tokens[i], "<") == 0)
+            if (strcmp(tokens[ix], "<") == 0)
             {
                 input_redir = 1;
-                input_file = tokens[i + 1];
-                tokens[i] = NULL;
+                input_file = tokens[ix + 1];
+                tokens[ix] = NULL;
                 break;
             }
         }
